@@ -2,8 +2,7 @@
 import cv2
 import mediapipe as mp
 import math
-import matplotlib.pyplot as plt
-import time
+
 
 
 # 获取人脸关键点
@@ -133,6 +132,6 @@ for landmarks in face_landmarks:
         landmarks[p][0] - int(w / 2):landmarks[p][0] - int(w / 2) + w] = effect
 
 cv2.imshow('texiao', image_copy)
-key =  cv2.waitKey(1) & 0xFF
+key =  cv2.waitKey(0) & 0xFF
 
 
